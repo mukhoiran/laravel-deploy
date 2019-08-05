@@ -93,6 +93,32 @@
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
+                <hr>
+                <ol>
+                  <li>ssh server</li>
+                  <li>#cd /var/www/html/ (default public html)</li>
+                  <li>install git</li>
+                  <li>clone git source</li>
+                  <li>install composer</li>
+                  <li>#mv composer.phar /usr/local/bin/composer</li>
+                  <li>#composer install (install dependencies)</li>
+                  <li>#php5enmod mcrypt (activate mcrypt)</li>
+                  <li>#service apache2 restart (restart apache)</li>
+                  <li>#chown -R www-data:www-data storage</li>
+                  <li>set debug true (optional)</li>
+                  <li>create .env file and setup db</li>
+                  <li>#php artisan key:generate</li>
+                  <li>try to access url public</li>
+                  <li>#cd /etc/apache2/sites-available/</li>
+                  <li>#nano 000-default.conf</li>
+                  <li>adjust documentRoot to the public directory, then ctrl+o and ctrl+x</li>
+                  <li>#service apache2 restart (restart apache)</li>
+                  <li>#sudo a2enmod rewrite</li>
+                  <li>#nano /etc/apache2/apache2.conf</li>
+                  <li>On directory /var/ww set AllowOverride None -> AllowOverride All</li>
+                  <li>#service apache2 restart (restart apache)</li>
+                  <li>Done.</li>
+                </ol>
             </div>
         </div>
     </body>
