@@ -1,2 +1,2 @@
 # laravel-deploy
-Documentation deployment Laravel via Github
+Deployment Laravel via Github
